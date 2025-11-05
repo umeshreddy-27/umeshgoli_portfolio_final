@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --force",
-    "preview": "vite preview"
-  },
+  "prebuild": "chmod +x node_modules/.bin/vite || true",
+  "build": "npm run prebuild && vite build --force",
+  "dev": "vite",
+  "preview": "vite preview"
+},
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
