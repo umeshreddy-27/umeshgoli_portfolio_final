@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
   "prebuild": "chmod +x node_modules/.bin/vite || true",
-  "build": "npm run prebuild && vite build --force",
+  "build": "vite build",
   "dev": "vite",
   "preview": "vite preview"
 },
